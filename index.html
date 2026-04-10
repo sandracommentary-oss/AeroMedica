@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTech Aero-Medica AR Demo</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        model-viewer { width: 100%; height: 85vh; background-color: #222; }
+        .info-panel { padding: 20px; text-align: center; }
+        #ar-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+
+ <model-viewer src="https://drive.google.com/uc?export=download&id=1-Pt3_JcLT9ZR8lupbl5Kqhxf0wGiS8p6" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" alt="A 3D anatomical model">
+    <div class="info-panel">
+        <h2>MyTech Aero-Medica</h2>
+        <p>Interactive Anatomical Overlay Prototype</p>
+    </div>
+
+</body>
+</html>
